@@ -1,0 +1,60 @@
+<div style="max-width: 700px; margin: 0 auto" class="container py-5">
+  <div class="card">
+    <h4 class="card-header text-center">Ministry Login Form</h4>
+    <div class="card-body px-3">
+      <form
+        class="px-3"
+        #officerLoginForm="ngForm"
+        (ngSubmit)="onSubmit()"
+        novalidate
+      >
+        <div class="form-group">
+          <div>
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              name="Email"
+              class="form-control mb-2"
+              placeholder="Email Address"
+              #email="ngModel"
+              [class.is-invalid]="email.invalid && email.touched"
+              [(ngModel)]="ministryLoginModel.Email"
+              required
+            />
+            <small
+              class="invalid-feedback mb-2"
+              *ngIf="email.errors && (email.invalid || email.touched)"
+              >Please enter email</small
+            >
+          </div>
+          <div>
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              name="Password"
+              class="form-control"
+              placeholder="Password"
+              #password="ngModel"
+              [class.is-invalid]="password.invalid && password.touched"
+              [(ngModel)]="ministryLoginModel.Password"
+              required
+            />
+            <small
+              class="invalid-feedback"
+              *ngIf="password.errors && (password.invalid || password.touched)"
+              >Please enter password</small
+            >
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-lg btn-dark px-5 mt-3"
+          [disabled]="officerLoginForm.form.invalid"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

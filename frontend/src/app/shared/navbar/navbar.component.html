@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">National Scholarship Portal</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/aboutUs">About Us</a>
+        <a class="nav-item nav-link" routerLink="/contactUs">Contact Us</a>
+      </ul>
+      <div class="dropdown" *ngIf="!_authenticationService.isLoggedIn()">
+        <button
+          class="btn btn-light px-4 dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Login
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item" routerLink="/studentLogin"
+              >Student Login</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="/instituteLogin"
+              >Institute Login</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="/officerLogin"
+              >Officer Login</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="/ministryLogin"
+              >Ministry Login</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown mx-2" *ngIf="!_authenticationService.isLoggedIn()">
+        <button
+          class="btn btn-light px-4 dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Register
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item" routerLink="/studentRegister"
+              >Student Registration</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="/instituteRegister"
+              >Institute Registration</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-light" *ngIf="_authenticationService.isLoggedIn()">
+        {{ _authenticationService.getUserName() }}
+      </div>
+      <button
+        type="button"
+        class="btn btn-light ms-3"
+        *ngIf="_authenticationService.isLoggedIn()"
+        (click)="_authenticationService.logout()"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</nav>

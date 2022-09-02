@@ -1,0 +1,188 @@
+/Institute/Register, POST                  //done
+/Institute/Login, POST
+/Institute/GetAllStudents, GET             //done
+/Institute/GetAllApplications, GET         //done
+/Institute/VerifyApplication, POST         //done
+/Institute/:id, GET                        //done
+/Institute/CheckRegistrationStatus, GET    //done
+
+
+
+
+student register
+{
+    "StudentName": "Ritam",
+    "DateOfBirth": "26/02/2000",
+    "Gender": "Male",
+    "Email": "ritam@gmail.com",
+    "InstituteCode" : "I123",
+    "PhoneNo" : "1234567890",
+    "StateOfDomicile": "WB",
+    "District" :"KOL",
+    "AadharNumber": 123456,
+    "BankIfscCode": "BANK123",
+    "BankAccountNumber": "123456789098",
+    "BankName": "BANK",
+}
+
+
+{
+    "AadharNumber": 123456789,
+    "Community": "COMMUNITY",
+    "FatherName": "Fatherr",
+    "MotherName": "motherr",
+    "AnnualIncome": 200000,
+    "InstituteName": "TMSL",
+    "PresentCourse": "CS",
+    "PresentCourseYear": 2025,
+    "ModeOfStudy": "Classroom",
+    "ClassStartDate": "23/05/2023",
+    "UniversityBoardName": "MAKAUT",
+    "PreviousCourse": "IT",
+    "PreviousPassingYear": 2022,
+    "PreviousClassPercentage": 87,
+    "RollNo10": "123344",
+    "BoardName10": "WBCS",
+"PassingYear10": 2012,
+    "Percentage10": 45,
+    "RollNo12": "431434",
+    "BoardName12": "grwgr",
+    "PassingYear12": 3456,
+    "Percentage12": 56.8,
+    "AddmissionFee": 456667,
+    "TutionFee": 345667,
+    "OtherFee": 7865,
+    "IsDisabled": false,
+    "TypeOfDisability": "false",
+    "PercentageDisability": 0,
+    "MartialStatus": "single",
+    "ParentProfession": "vhvthb",
+    "State": "hbtbjb",
+    "District": "bjtebjeb",
+    "Block": "bjtebjtebj",
+    "HouseNumber": "bbtjbtj",
+"StreetNumber": "btjtbj",
+    "Pincode": 4566,
+    "CertificateUrl": "vbt t tri",
+    "StudentId": 1,
+    "SchemeId": 2
+}
+
+
+
+{
+    "InstituteCategory" : 1,
+    "State" : "Tamil Nadu",
+    "District" : "Tiruvallur",
+    "InstituteName" : "SVCE",
+    "InstituteCode" : "SVCE01",
+    "DiseCode" : "S01",
+    "Location" : "Chennai",
+    "InstituteType" : "Autonomous",
+    "AffliatedUniversityState" : "Tamil Nadu",
+    "AffliatedUniversityName" : "Anna University",
+    "YearOfAddmission" : 2018,
+    "AddressLine1" : "11/5 Kamatchi street, Lenin Nagar",
+    "AddressLine2" : "Ambattur",
+    "AddressCity" : "Chennai",
+    "AddressState" : "Tamil Nadu",
+    "AddressDistrict" : "Tiruvallur",
+    "AddressPincode" : 600053,
+    "PrincipalName" : "Sethu",
+    "MobileNumber" : "9940589977",
+    "Telephone" : "044282832"
+}
+
+
+
+student register
+{
+    "StudentName": "Ritam",
+    "DateOfBirth": "26/02/2000",
+    "Gender": "Male",
+    "Email": "ritam@gmail.com",
+    "InstituteCode" : "I123",
+    "PhoneNo" : "1234567890",
+    "StateOfDomicile": "WB",
+    "District" :"KOL",
+    "AadharNumber": 123456,
+    "BankIfscCode": "BANK123",
+    "BankAccountNumber": "123456789098",
+    "BankName": "BANK",
+}
+
+
+// 
+{
+    "AadharNumber": 123456789,
+    "Community": "COMMUNITY",
+    "FatherName": "Fatherr",
+    "MotherName": "motherr",
+    "AnnualIncome": 200000,
+    "InstituteName": "SVCE",
+    "PresentCourse": "CS",
+    "PresentCourseYear": 2025,
+    "ModeOfStudy": "Classroom",
+    "ClassStartDate": "23/05/2023",
+    "UniversityBoardName": "MAKAUT",
+    "PreviousCourse": "IT",
+    "PreviousPassingYear": 2022,
+    "PreviousClassPercentage": 87,
+    "RollNo10": "123344",
+    "BoardName10": "WBCS",
+    "PassingYear10": 2012,
+    "Percentage10": 45,
+    "RollNo12": "431434",
+    "BoardName12": "grwgr",
+    "PassingYear12": 3456,
+    "Percentage12": 56.8,
+    "AddmissionFee": 456667,
+    "TutionFee": 345667,
+    "OtherFee": 7865,
+    "IsDisabled": false,
+    "TypeOfDisability": "false",
+    "PercentageDisability": 0,
+    "MartialStatus": "single",
+    "ParentProfession": "vhvthb",
+    "State": "hbtbjb",
+    "District": "bjtebjeb",
+    "Block": "bjtebjtebj",
+    "HouseNumber": "bbtjbtj",
+    "StreetNumber": "btjtbj",
+    "Pincode": 4566,
+    "CertificateUrl": "vbt t tri",
+    "StudentId": 1,
+    "SchemeId": 2,
+    "InstituteCode": "SVCE01"
+}
+
+Scheme
+{
+    "Name" : "Scheme 1",
+    "Description" : "Scheme 1 Description"
+}
+
+{
+    "InstituteCategory" : "Government",
+    "State" : "Tamil Nadu",
+    "District" : "Tiruvallur",
+    "InstituteName" : "SVCE",
+    "InstituteCode" : "SVCE01",
+    "DiseCode" : "S01",
+    "Location" : "Chennai",
+    "InstituteType" : "Autonomous",
+    "AffliatedUniversityState" : "Tamil Nadu",
+    "AffliatedUniversityName" : "Anna University",
+    "YearOfAddmission" : 2018,
+    "AddressLine1" : "11/5 Kamatchi street, Lenin Nagar",
+    "AddressLine2" : "Ambattur",
+    "AddressCity" : "Chennai",
+     "AddressState" : "Tamil Nadu",
+    "AddressDistrict" : "Tiruvallur",
+    "AddressPincode" : 600053,
+    "PrincipalName" : "Sethu",
+    "MobileNumber" : "9940589977",
+    "Telephone" : "044282832"
+}
+
+

@@ -1,0 +1,27 @@
+<div class="container py-5">
+  <div class="rectangle">
+    <h1 class="text-center mb-5">Welcome to The Nodal Officer Dashboard</h1>
+  </div>
+  <div class="text-center mb-5">
+    <img
+      src="../../../assets/images/pic.jpg"
+      width="300"
+      height="250"
+      class="center"
+    />
+  </div>
+  <div class="mt-5 d-grid gap-4 d-md-flex justify-content-md-center">
+    <button
+      [routerLink]="['/officerApplicationList']"
+      class="btn btn-lg btn-dark px-5"
+    >
+      Student Application Forms
+    </button>
+    <button
+      [routerLink]="['/officerInstitutesList']"
+      class="btn btn-lg btn-dark px-5"
+    >
+      Institute Registration Requests
+    </button>
+  </div>
+</div>

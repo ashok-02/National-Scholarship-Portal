@@ -1,0 +1,39 @@
+<div class="container py-5">
+  <div class="card">
+    <h5 class="card-header text-center">Institute Registration Requests</h5>
+    <div class="card-body">
+      <table class="table align-middle text-center">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Institute Id</th>
+            <th scope="col">Institute Code</th>
+            <th scope="col">Institute Name</th>
+            <th scope="col">Institute State</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let institute of institutes">
+            <td>{{ institute.instituteId }}</td>
+            <td>{{ institute.instituteCode }}</td>
+            <td>{{ institute.instituteName }}</td>
+            <td>{{ institute.state }}</td>
+            <td>
+              <div>
+                <button
+                  class="btn btn-secondary"
+                  [routerLink]="[
+                    '/officerInstituteDetail/',
+                    institute.instituteId
+                  ]"
+                >
+                  View
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
